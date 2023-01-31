@@ -163,5 +163,11 @@ function stopp(e) {
     startSakura();
   }
 }
-img.onload = function () { startSakura(); }
+//img.onload = function () { startSakura(); }
+window.addEventListener("DOMContentLoaded",
+  startSakura);
+
+window.onload = function () {
+  setTimeout(startSakura, 1000);
+}
 

@@ -1,3 +1,4 @@
+/* 夜晚模式 流星特效 */
 function dark() {
   window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
   var n, e, i, h, t = .05,
