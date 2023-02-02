@@ -1,3 +1,7 @@
+:root{
+  --bobovo-card-bg:rgba(255,255,255,0.88),
+  --bobovo-bgblur:blur(10px)
+}
 /* 页脚与头图透明 */
 #footer {
   background: transparent !important;
@@ -46,6 +50,7 @@
   position: absolute !important;
   width: fit-content !important;
   left: 50% !important;
+  top: 11.5px !important;
   transform: translateX(-50%) !important;
 }
 /* 子菜单横向展示 */
@@ -538,3 +543,28 @@ svg.social_icon {
   transform: translate(-50%, -48px);
 }
 
+:root {
+  --bobovo-emphasis-color: #F7F81A;
+}
+/* 公告&欢迎页 */
+.card-announcement {
+  /* background: linear-gradient(to top left, #8B00BB 0%, #030094 100%) !important;
+  color:white; */
+  line-height:30px;
+  font-size:16px;
+}
+.card-announcement .item-headline span{
+  margin-left:0!important;
+}
+.card-announcement span{
+  font-weight:bold;
+  font-size:20px!important;
+  color: #49A6E9
+}
+
+/* 页面设定 */
+/* #post, #page, #aside-content .card-widget, #archive, #tag, #category {
+  background: var(--bobovo-card-bg);
+  backdrop-filter: var(--bobovo-bgblur);
+  -webkit-backdrop-filter: var(--ichika-bgblur);
+} */
