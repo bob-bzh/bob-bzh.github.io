@@ -58,13 +58,33 @@
   display: flex !important;
 }
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
-.menus_items .menus_item:nth-child(2) .menus_item_child {
+/* .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -40px;
 }
 .menus_items .menus_item:nth-child(3) .menus_item_child {
   left: -100px;
+} */
+.menus_item_child li:not(#sidebar-menus li){
+  float: left;
+  border-radius: 6px!important;
+  -webkit-border-radius: 6px!important;
+  -moz-border-radius: 6px!important;
+  -ms-border-radius: 6px!important;
+  -o-border-radius: 6px!important;
 }
-
+.menus_item_child:not(#sidebar-menus ul){
+/*
+  left:calc(-150%)!important;这是估算值，为了保持元素居中的，如果不合适可以自己调
+改为：*/
+left:50%;
+translate:-50%;
+}
+/* 手机端 目录列表 */
+#sidebar #sidebar-menus .menus_items {
+  /* padding: 0 10px 40px; */
+  display:flex;
+  flex-direction:column
+}
 /* 霓虹灯效果 */
 /* 日间模式不生效 */
 [data-theme="light"] #site-name,
