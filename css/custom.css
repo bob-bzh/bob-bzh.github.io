@@ -562,9 +562,6 @@ svg.social_icon {
   color: #49A6E9
 }
 
-/* 页面设定 */
-/* #post, #page, #aside-content .card-widget, #archive, #tag, #category {
-  background: var(--bobovo-card-bg);
-  backdrop-filter: var(--bobovo-bgblur);
-  -webkit-backdrop-filter: var(--ichika-bgblur);
-} */
+.layout{
+  max-width: 1300px;
+}
