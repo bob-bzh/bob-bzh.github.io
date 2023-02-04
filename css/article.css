@@ -89,7 +89,7 @@
 
 /* 归档、标签、分类页 */
 .layout.hide-aside{
-  max-width:1200px;
+  max-width:1400px;
 }
 
 #archive,#tag,#category {
@@ -618,7 +618,7 @@
   justify-content:center;
   align-items:center;
   padding:0 35px;
-  background:rgba(255,255,255,0.9);
+  background:rgba(255,255,255,0.8);
   transition:0.15s;
 }
 
