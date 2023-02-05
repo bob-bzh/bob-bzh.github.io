@@ -6,49 +6,63 @@
 }
 addScript() */
 //2022.9.11 已修复，需要jq，请自行引入
-function addScript(url) {
-  var script = document.createElement('script');
-  script.setAttribute('type', 'text/javascript');
-  script.setAttribute('src', url);
-  document.getElementsByTagName('head')[0].appendChild(script);
+
+
+// function addScript(url) {
+//   var script = document.createElement('script');
+//   script.setAttribute('type', 'text/javascript');
+//   script.setAttribute('src', url);
+//   document.getElementsByTagName('head')[0].appendChild(script);
+// }
+// addScript('jquery-v3.6.0.js')
+// document.getElementById("name-container").setAttribute("style", "display:none");
+// var position = $(window).scrollTop();
+// $(window).scroll(function () {
+//   var scroll = $(window).scrollTop();
+//   if (scroll > position) {
+//     document.getElementById("name-container").setAttribute("style", "");
+//     document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
+//   } else {
+//     document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+//     document.getElementById("name-container").setAttribute("style", "display:none");
+//   }
+//   position = scroll;
+// });
+// function scrollToTop() {
+//   document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+//   document.getElementById("name-container").setAttribute("style", "display:none");
+//   btf.scrollToDest(0, 500);
+// }
+// //修复没有弄右键菜单的童鞋无法回顶部的问题
+// document.getElementById("page-name").innerText = document.title.split(" | BoBOvOの小窝")[0];
+// /*这里是去掉你的网站全局名称的设置，如果你不需要去掉，你可以写成：
+// document.getElementById("page-name").innerText=document.title
+// 或者把你的网站的分隔符和全局网站名称加上去*/
+
+
+document.addEventListener('pjax:complete', tonav);
+document.addEventListener('DOMContentLoaded', tonav);
+//响应pjax
+function tonav() {
+  document.getElementById("name-container").setAttribute("style", "display:none");
+  var position = $(window).scrollTop();
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > position) {
+      document.getElementById("name-container").setAttribute("style", "");
+      document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
+    } else {
+      document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+      document.getElementById("name-container").setAttribute("style", "display:none");
+    }
+    position = scroll;
+  });
+  //修复没有弄右键菜单的童鞋无法回顶部的问题
+  document.getElementById("page-name").innerText = document.title.split(" | BoBOvOの小窝")[0];
 }
-addScript('jquery-v3.6.0.js')
 
-document.getElementById("name-container").setAttribute("style", "display:none");
-
-var position = $(window).scrollTop();
-
-$(window).scroll(function () {
-
-  var scroll = $(window).scrollTop();
-
-  if (scroll > position) {
-
-
-    document.getElementById("name-container").setAttribute("style", "");
-    document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
-
-  } else {
-
-
-    document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
-    document.getElementById("name-container").setAttribute("style", "display:none");
-
-  }
-
-  position = scroll;
-
-});
 function scrollToTop() {
   document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
   document.getElementById("name-container").setAttribute("style", "display:none");
   btf.scrollToDest(0, 500);
 }
-//修复没有弄右键菜单的童鞋无法回顶部的问题
-document.getElementById("page-name").innerText = document.title.split(" | BoBOvOの小窝")[0];
-/*这里是去掉你的网站全局名称的设置，如果你不需要去掉，你可以写成：
-document.getElementById("page-name").innerText=document.title
-
-或者把你的网站的分隔符和全局网站名称加上去*/
-
-

@@ -57,6 +57,14 @@
 #nav .menus_items .menus_item:hover .menus_item_child {
   display: flex !important;
 }
+
+#name-container{
+  position: absolute !important;
+  width: fit-content !important;
+  left: 50% !important;
+  top: 11.5px !important;
+  transform: translateX(-50%) !important;
+}
 /* 这里的2是代表导航栏的第2个元素，即有子菜单的元素，可以按自己需求修改 */
 /* .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -40px;
@@ -261,7 +269,7 @@ translate:-50%;
 } */
 /* 个人信息Follow me按钮 */
 #aside-content > .card-widget.card-info > #card-info-btn {
-  background-color: #3eb8be;
+  background-color: #98DAFF;
   border-radius: 16px;
 }
 
