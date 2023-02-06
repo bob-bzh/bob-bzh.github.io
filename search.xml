@@ -8,7 +8,7 @@
       <link href="/2023/02/04/about%E5%85%B3%E4%BA%8E%E6%88%91%E9%A1%B5%E9%9D%A2%E9%AD%94%E6%94%B9/"/>
       <url>/2023/02/04/about%E5%85%B3%E4%BA%8E%E6%88%91%E9%A1%B5%E9%9D%A2%E9%AD%94%E6%94%B9/</url>
       
-        <content type="html"><![CDATA[<h1 id="实际效果"><a href="#实际效果" class="headerlink" title="实际效果"></a>实际效果</h1><div class="tag link"><a class="link-card" title="butterfly魔改关于页面" href="https://anzhiy.cn/posts/e62b.html#%E5%8A%A0%E5%85%A5-countup-js-cdn-%E9%80%89%E9%A1%B9"><div class="left"><img src="https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg"/></div><div class="right"><p class="text">butterfly魔改关于页面</p><p class="url">https://anzhiy.cn/posts/e62b.html#%E5%8A%A0%E5%85%A5-countup-js-cdn-%E9%80%89%E9%A1%B9</p></div></a></div><p>魔改有风险 魔改前注意备份</p><h1 id="添加-about-页面"><a href="#添加-about-页面" class="headerlink" title="添加 about 页面"></a>添加 about 页面</h1><p>新建</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="实际效果"><a href="#实际效果" class="headerlink" title="实际效果"></a>实际效果</h1><div class="tag link"><a class="link-card" title="butterfly魔改关于页面" href="https://anzhiy.cn/posts/e62b.html#%E5%8A%A0%E5%85%A5-countup-js-cdn-%E9%80%89%E9%A1%B9"><div class="left"><img src="https://img02.anzhiy.cn/adminuploads/1/2022/09/15/63232b7d91d22.jpg"/></div><div class="right"><p class="text">butterfly魔改关于页面</p><p class="url">https://anzhiy.cn/posts/e62b.html#%E5%8A%A0%E5%85%A5-countup-js-cdn-%E9%80%89%E9%A1%B9</p></div></a></div><p>魔改有风险 魔改前注意备份</p><h1 id="添加-about-页面"><a href="#添加-about-页面" class="headerlink" title="添加 about 页面"></a>添加 about 页面</h1><p><code>钱钱钱</code></p>]]></content>
       
       
       <categories>
@@ -54,23 +54,23 @@
     
     
     <entry>
-      <title>footer自定义和徽标的制作</title>
-      <link href="/2023/01/17/%E6%B5%8B%E8%AF%95/"/>
-      <url>/2023/01/17/%E6%B5%8B%E8%AF%95/</url>
+      <title>css代码</title>
+      <link href="/2023/01/17/css%E4%BB%A3%E7%A0%81/"/>
+      <url>/2023/01/17/css%E4%BB%A3%E7%A0%81/</url>
       
-        <content type="html"><![CDATA[<h2 id="1-1-徽标制作"><a href="#1-1-徽标制作" class="headerlink" title="1.1 徽标制作"></a>1.1 徽标制作</h2><h1 id="自带-icon"><a href="#自带-icon" class="headerlink" title="自带 icon"></a>自带 icon</h1><div class="note [class] [no-icon] [style] flat"></div><p>首先打开网页<a target="_blank" rel="noopener external nofollow noreferrer" href="https://shields.io/">Shields.io</a>和我同款的徽标需要找到 <strong> Dynamic </strong>这个标题<br><img src="/image/footer定义和徽标的制作/1.jpg" /><br>我选择的是<strong> json </strong>格式<del>不会别的 ┭┮﹏┭┮</del>，首先的这个 label 是徽标左边的文字内容可以自己填写，第二个是 json 文件的链接，我把文件放在了图床里，第三个是解析 json 获取其中数据<br>可以进入此页面 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://jsonpath.com/">JSONPath</a><br><img src="/image/footer定义和徽标的制作/2.jpg" /><br>可以通过 <strong>JSONPath</strong> 解析到相应对象下的数据,下面是我的代码,可以通过<strong><span class='p red'>$.phoneNumbers[0].type</span></strong>获取到第一项,获取第二项的话把其中的 0 改为 1</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;firstName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BoB&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;lastName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BoB&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">22</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;phoneNumbers&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;上班摸鱼中🐟&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;下班休息啦🌙&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>后三项分别为颜色,徽标第二块的前缀和后缀，可以不用填，直接点击按钮<kbd>Make Badge</kbd>,结果如下:<br><img src="/image/footer定义和徽标的制作/3.jpg" /><br>在下面还有一个样式可以选择，使用最后一个。<br><img src="/image/footer定义和徽标的制作/4.jpg" /><br>复制左边代码,然后将 <strong><span class='p red'>style=social&</span></strong>,复制到制作徽标页面的网址的<strong><span class='p red'>json?</span></strong>后面,就可达成最终效果。</p>]]></content>
+        <content type="html"><![CDATA[<p><code>需要在特定页面对个别样式进行更改时,在其选择器上添加此代码</code></p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.page</span>: <span class="built_in">has</span>(#about-page);</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
           
-          <category> 站点相关 </category>
+          <category> 生活 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 🖥️代码 </tag>
+            <tag> 📄不可外传 </tag>
             
         </tags>
       
@@ -96,6 +96,31 @@
         <tags>
             
             <tag> 🦋Butterfly </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>footer自定义和徽标的制作</title>
+      <link href="/2023/01/17/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2023/01/17/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-1-徽标制作"><a href="#1-1-徽标制作" class="headerlink" title="1.1 徽标制作"></a>1.1 徽标制作</h2><h1 id="自带-icon"><a href="#自带-icon" class="headerlink" title="自带 icon"></a>自带 icon</h1><div class="note [class] [no-icon] [style] flat"></div><p>首先打开网页<a target="_blank" rel="noopener external nofollow noreferrer" href="https://shields.io/">Shields.io</a>和我同款的徽标需要找到 <strong> Dynamic </strong>这个标题<br><img src="/image/footer定义和徽标的制作/1.jpg" /><br>我选择的是<strong> json </strong>格式<del>不会别的 ┭┮﹏┭┮</del>，首先的这个 label 是徽标左边的文字内容可以自己填写，第二个是 json 文件的链接，我把文件放在了图床里，第三个是解析 json 获取其中数据<br>可以进入此页面 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://jsonpath.com/">JSONPath</a><br><img src="/image/footer定义和徽标的制作/2.jpg" /><br>可以通过 <strong>JSONPath</strong> 解析到相应对象下的数据,下面是我的代码,可以通过<strong><span class='p red'>$.phoneNumbers[0].type</span></strong>获取到第一项,获取第二项的话把其中的 0 改为 1</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;firstName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BoB&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;lastName&quot;</span><span class="punctuation">:</span> <span class="string">&quot;BoB&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;age&quot;</span><span class="punctuation">:</span> <span class="number">22</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;phoneNumbers&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;上班摸鱼中🐟&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;下班休息啦🌙&quot;</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure><p>后三项分别为颜色,徽标第二块的前缀和后缀，可以不用填，直接点击按钮<kbd>Make Badge</kbd>,结果如下:<br><img src="/image/footer定义和徽标的制作/3.jpg" /><br>在下面还有一个样式可以选择，使用最后一个。<br><img src="/image/footer定义和徽标的制作/4.jpg" /><br>复制左边代码,然后将 <strong><span class='p red'>style=social&</span></strong>,复制到制作徽标页面的网址的<strong><span class='p red'>json?</span></strong>后面,就可达成最终效果。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 站点相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 🖥️代码 </tag>
             
         </tags>
       

@@ -88,6 +88,12 @@
 
 
 /* 归档、标签、分类页 */
+
+/* 归档小细节 */
+#achive,.article-sort,.article-sort-item,.article-sort-item-info,.article-sort-meta,.article-meta-wrap,.article-sort-item-tags a{
+  color:#99a9bf
+}
+
 .layout.hide-aside{
   max-width:1400px;
 }
@@ -738,4 +744,30 @@
   object-fit: cover;
 }
 
+#recent-posts > .recent-post-item:hover img.post_bg {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
+/* 右侧卡片 */
+.card-widget{
+  font-size: 14px;
+}
+/* 文章字体大小 */
+.post-content > p{
+    font-size: 16px;
+}
+.post-copyright__type >.post-copyright-info > a,
+ .post-copyright-m .post-copyright-m-info .post-copyright-c .post-copyright-cc-info a
+{
+  color:grey
+}
+/* flink-list 友链卡片 */
+.flink-list > a{
+  width: calc(23%-15px) !important;
+  height: 150px;
+  margin: 15px 10px;
+}

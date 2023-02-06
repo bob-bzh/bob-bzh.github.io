@@ -1,0 +1,77 @@
+#article-container .timeline.blue {
+  --timeline-color: #428bca;
+  --timeline-bg: rgba(66,139,202, 0.2);
+}
+.timeline .headline {
+  background: #49a6e9!important;
+}
+#article-container .timeline {
+  border: none;
+}
+
+.timeline-item {
+  border-radius: 20px;
+  background: #fff;
+  padding: 10px;
+  margin: 30px 0!important;
+}
+#article-container .timeline .timeline-item {
+  margin: 0 0 15px;
+}
+.timeline {
+  margin: 0!important;
+  padding: 0!important;
+}
+
+#article-container .timeline {
+    border: none;
+}
+#article-container .timeline {
+    margin: 0 0 20px 10px;
+    padding: 14px 20px 5px;
+    border-left: 2px solid var(#428bca, #49b1f5);
+    border: none;
+
+}
+
+.timeline {
+    margin: 0!important;
+    padding: 0!important;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+#article-container {
+    font-size: 16px;
+}
+#article-container .timeline .timeline-item.headline .timeline-item-title .item-circle > p {
+  font-weight: 600;
+  font-size: 25px;
+}
+#article-container .timeline .timeline-item .timeline-item-content {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: none;
+  font-size: 0.93em;
+}
+/* 左边圆圈 */
+#article-container .timeline .timeline-item .item-circle:before{
+  display: none;
+}
+
+.timeline-item .timeline-item-title .item-circle{
+padding-left:5px;
+}
+#article-container .timeline .timeline-item .item-circle > p {
+  margin: 0 0 0 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
