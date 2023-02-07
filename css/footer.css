@@ -17,6 +17,15 @@
   text-align: left;
   flex-wrap: wrap;
 }
+/* 在短文时 标题和格言 */
+.page:has(#essay_page) #ft {
+  max-width: 1200px;
+  margin: 0 auto 12px;
+  display: flex;
+  color: rgb(102 102 102 / 80%) !important;
+  text-align: left;
+  flex-wrap: wrap;
+}
 
 .ft-item-1,
 .ft-item-2 {
@@ -166,13 +175,24 @@
   color: rgb(255 255 255 / 80%) !important;
   border-radius: 30px;
 }
-/* 在关于页面时 */
+/* 在关于页面时 链接*/
 .page:has(#about-page) #footer-wrap a {
   color: rgb(102 102 102 / 80%) !important;
-
   border-radius: 30px;
 }
-
+/* 在短文时 链接*/
+.page:has(#essay_page) #footer-wrap a {
+  color: rgb(102 102 102 / 80%) !important;
+  border-radius: 30px;
+}
+/* 在短文页面 计时器 */
+.page:has(#essay_page) #footer-wrap {
+  opacity: 1;
+  overflow: visible;
+  height: auto !important;
+  min-height: 16px;
+  color: #666;
+}
 #footer-wrap {
   padding: 20px 20px;
 }
