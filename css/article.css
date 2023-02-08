@@ -860,3 +860,31 @@ h3{
 .tabs > .tab-contents{
   background-color: white;
 }
+
+/* 文章 小标题  h1 h2 ...*/
+#article-container h1:before, #article-container h2:before, #article-container h3:before, #article-container h4:before, #article-container h5:before, #article-container h6:before{
+  content:none
+}
+#article-container h1, #article-container h2, #article-container h3, #article-container h4, #article-container h5, #article-container h6 {
+  padding-left: 0px;
+  animation: none;
+}
+#article-container h1:hover, #article-container h2:hover, #article-container h3:hover, #article-container h4:hover, #article-container h5:hover, #article-container h6:hover{
+  padding-left: 0px;
+}
+/* 文章链接标签 */
+#article-container .tag-Link {
+  background: var(--anzhiyu-secondbg);
+  border-radius: 8px!important;
+  display: flex;
+  border: var(--style-border);
+  flex-direction: column;
+  padding: .5rem 1rem!important;
+  border-width: 1px!important;
+  margin: 1rem 0;
+}
+/* 文章 */
+.post-content p{
+  font-size: 17px;
+  padding: 0px 0px;
+}
