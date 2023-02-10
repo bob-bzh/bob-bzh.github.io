@@ -31,7 +31,7 @@
   --tab-button-active-bg: #fff;
   --card-bg: #fff;
   --sidebar-bg: #f6f8fa;
-  --btn-hover-color: #800080;
+  --btn-hover-color:#49A6E9 ;
   --btn-color: #fff;
   --btn-bg: #49b1f5;
   --text-bg-hover: rgba(73,177,245,0.7);
@@ -890,4 +890,9 @@ h3{
 }
 #post-comment a{
   color:#000
+}
+
+/* 页数设置那里 */
+#pagination .pagination a{
+  color: #99a9bf;
 }
