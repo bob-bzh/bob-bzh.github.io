@@ -549,7 +549,7 @@
       <link href="/music/index.html"/>
       <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[    <div id="aplayer-nqUAXmhR" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="8111656844" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="400px" data-preload="none" data-theme="#ad7a86"    ></div>]]></content>
+        <content type="html"><![CDATA[    <div id="aplayer-eBuczQCN" class="aplayer aplayer-tag-marker meting-tag-marker"         data-id="8111656844" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="true" data-mutex="false" data-listmaxheight="400px" data-preload="none" data-theme="#ad7a86"    ></div>]]></content>
       
     </entry>
     
@@ -571,7 +571,7 @@
       <link href="/talks/index.html"/>
       <url>/talks/index.html</url>
       
-        <content type="html"><![CDATA[<script src="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/talks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/talks.min.css"><div id="qexot"></div><script>showQexoTalks("qexot", "https://qexo.bobovo.cc/", 8)</script>]]></content>
+        <content type="html"><![CDATA[<script src="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/talks.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qexo-static@1.5.1/hexo/talks.min.css"><div id="qexot"></div><script>showQexoTalks("qexot", "https://qexo.bobovo.cc", 8)</script>]]></content>
       
     </entry>
     
