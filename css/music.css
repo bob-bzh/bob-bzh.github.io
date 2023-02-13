@@ -76,6 +76,7 @@ body:has(#anMusic-page) #nav-music {
   text-align: center;
   height: auto;
   margin: 15px;
+  margin-bottom: 0px !important;
 }
 
 #anMusic-page .aplayer-info .aplayer-music .aplayer-author,
@@ -86,14 +87,15 @@ body:has(#anMusic-page) #nav-music {
 }
 
 #anMusic-page .aplayer-info .aplayer-lrc {
-  height: 800%;
-  margin-top: 80px;
+  height: 250%;
+  margin-top: 0px;
   mask-image: linear-gradient(to bottom, #000, #000, #000, #000, #000, #000, #000, #000, #000, #000, #0000, #0000);
 }
 
 #anMusic-page .aplayer-info .aplayer-lrc p {
   font-size: 14px;
   color: #fff;
+  margin: 2px 0px !important;
 }
 
 #anMusic-page .aplayer .aplayer-lrc:after,
@@ -144,7 +146,6 @@ body:has(#anMusic-page) #nav-music {
 #anMusic-page .aplayer-info .aplayer-time .aplayer-time-inner {
   margin-right: 18px;
   margin-top: -8px;
-  color: white;
 }
 
 #anMusic-page .aplayer-info .aplayer-time .aplayer-icon-back {
@@ -208,6 +209,11 @@ body:has(#anMusic-page) #nav-music {
 
 #anMusic-page ol>li span.aplayer-list-author {
   opacity: 0.6;
+}
+
+.aplayer .aplayer-lrc .aplayer-lrc-contents {
+  height: 50%;
+  /* overflow: hidden; */
 }
 
 /* 导航栏 */
@@ -317,7 +323,6 @@ body:has(#anMusic-page) .aplayer .aplayer-info .aplayer-controller .aplayer-time
   /* 歌词信息 */
   #anMusic-page .aplayer-body {
     width: 100%;
-
     position: fixed;
     margin: auto;
     left: 0;
