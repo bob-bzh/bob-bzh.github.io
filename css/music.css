@@ -216,6 +216,7 @@ body:has(#anMusic-page) #nav-music {
   /* overflow: hidden; */
 }
 
+
 /* 导航栏 */
 .page:has(#anMusic-page) #nav {
   backdrop-filter: none !important;
@@ -415,4 +416,20 @@ body:has(#anMusic-page) .aplayer .aplayer-info .aplayer-controller .aplayer-time
   #anMusic-page .aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap {
     left: -66px;
   }
+}
+
+/* 吸底音乐 */
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+  /* 默认情况下缩进左侧66px，只留一点箭头部分 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+  /* 鼠标悬停是左侧缩进归零，完全显示按钮 */
+}
+
+/* 歌词默认是打开的  直接display none */
+.aplayer.aplayer-fixed .aplayer-lrc {
+  display: none !important;
 }
