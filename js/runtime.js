@@ -36,12 +36,12 @@ function createtime() {
   let currentTimeHtml = "";
   (currentTimeHtml =
     hnum < 18 && hnum >= 9
-      ? `<img class='boardsign' src='https://cdn.staticaly.com/gh/bob-bzh/picgo_pic@main/img/徽标白.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
-      : `<img class='boardsign' src='https://cdn.staticaly.com/gh/bob-bzh/picgo_pic@main/img/徽标晚.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
+      ? `<img class='boardsign' src='https://cdn.jsdelivr.net/gh/bob-bzh/picgo_pic@main/img/徽标白.svg' title='什么时候能够实现财富自由呀~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`
+      : `<img class='boardsign' src='https://cdn.jsdelivr.net/gh/bob-bzh/picgo_pic@main/img/徽标晚.svg' title='下班了就该开开心心地玩耍~'><br> <div style="font-size:13px;font-weight:bold">本站居然运行了 ${dnum} 天 ${hnum} 小时 ${mnum} 分 ${snum} 秒 <i id="heartbeat" class='fas fa-heartbeat'></i> <br> 旅行者 1 号当前距离地球 ${dis} 千米，约为 ${unit} 个天文单位 🚀</div>`),
     document.getElementById("workboard") &&
     (document.getElementById("workboard").innerHTML = currentTimeHtml);
 }
-// https://img.shields.io/badge/dynamic/json?style=social&url=https://cdn.staticaly.com/gh/bob-bzh/picgo_pic@main/img/huibiao.json&label=%F0%9F%8E%89BoB%E5%B0%8F%E7%AA%9D&query=$[%27phoneNumbers%27][0][%27type%27]
+// https://img.shields.io/badge/dynamic/json?style=social&url=https://cdn.jsdelivr.net/gh/bob-bzh/picgo_pic@main/img/huibiao.json&label=%F0%9F%8E%89BoB%E5%B0%8F%E7%AA%9D&query=$[%27phoneNumbers%27][0][%27type%27]
 // 徽标原始代码
 // 设置重复执行函数，周期1000ms
 setInterval(() => {
